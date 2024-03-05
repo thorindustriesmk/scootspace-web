@@ -11,6 +11,7 @@ import PricingPlan from "./components/PricingPlan.jsx";
 import Locations from "./components/Locations.jsx";
 import Footer from "./components/Footer.jsx";
 import MobileFooter from "./components/MobileFooter.jsx";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -35,6 +36,7 @@ function App() {
 
   return (
     <div className={`App flex flex-col justify-center items-center`}>
+      <SpeedInsights />
       {isMobile ? (
         <MobileNav showSidebar={showSidebar} toggleSidebar={toggleSidebar} /> // Render Topbar for screen size less than or equal to 1024px
       ) : (
