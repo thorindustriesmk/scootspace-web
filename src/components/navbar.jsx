@@ -8,17 +8,17 @@ function Navbar() {
           <img src={logo} width={150} alt="" />
         </div>
         <div className="flex basis-full max-lg:invisible ml-28">
-          <div className="flex basis-full flex-row justify-start gap-8 items-center font-normal  ">
-            <h2>
+          <div className="flex basis-full flex-row justify-start gap-8 items-center font-normal   ">
+            <h2 className="transition ease-in-out duration-300 hover:scale-110">
               <a href="#home">About Us</a>
             </h2>
-            <h2>
+            <h2 className="transition ease-in-out duration-300 hover:scale-110">
               <a href="#howToPark">How to park</a>
             </h2>
-            <h2>
+            <h2 className="transition ease-in-out duration-300 hover:scale-110">
               <a href="#PricingPlan">Pricing</a>
             </h2>
-            <h2>
+            <h2 className="transition ease-in-out duration-300 hover:scale-110">
               <a href="#Locations">Locations</a>
             </h2>
           </div>
@@ -39,7 +39,7 @@ function Navbar() {
             </svg>
             English
           </button>
-          <button className="text-white h-10 w-36 bg-primary rounded-[20px] max-lg:invisible ">
+          <button className="transition ease-in-out duration-150 hover:scale-110 text-white h-10 w-36 bg-primary rounded-[20px] max-lg:invisible ">
             The App
           </button>
         </div>

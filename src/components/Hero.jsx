@@ -19,10 +19,10 @@ function Hero() {
               around."
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center xl:justify-start  gap-5 w-full">
-              <button className="flex w-full sm:w-44 font-aptos-semibold justify-center items-center text-white text-center py-2 px-3 border-primary bg-primary gap-2.5 border-2 rounded-2xl">
+              <button className="transition ease-in-out duration-150 hover:scale-110 flex w-full sm:w-44 font-aptos-semibold justify-center items-center text-white text-center py-2 px-3 border-primary bg-primary gap-2.5 border-2 rounded-2xl">
                 Download the App
               </button>
-              <button className="flex w-full sm:w-44 font-aptos-semibold justify-center items-center text-center text-black py-2 px-3 bg-white rounded-2xl gap-2.5 border-2 border-teal-500">
+              <button className="transition ease-in-out duration-150 hover:scale-110 flex w-full sm:w-44 font-aptos-semibold justify-center items-center text-center text-black py-2 px-3 bg-white rounded-2xl gap-2.5 border-2 border-teal-500">
                 How to park?
               </button>
             </div>

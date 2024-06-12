@@ -12,9 +12,15 @@ function Footer() {
         <div className="flex flex-col gap-6 justify items-start w-full xl:px-28 ">
           <div className="flex flex-row justify-start items-start">
             <ul className="flex flex-row justify-center items-start gap-7 text-center text-black text-2xl font-normal  leading-7">
-              <li>About Us</li>
-              <li>Our office</li>
-              <li>Our app</li>
+              <li className="transition ease-in-out duration-300 hover:scale-110 cursor-pointer">
+                About Us
+              </li>
+              <li className="transition ease-in-out duration-300 hover:scale-110 cursor-pointer">
+                Our office
+              </li>
+              <li className="transition ease-in-out duration-300 hover:scale-110 cursor-pointer">
+                Our app
+              </li>
             </ul>
           </div>
           <div className="flex flex-row justify-end items-end ">
@@ -41,9 +47,15 @@ function Footer() {
           </div>
           <div>
             <ul className="flex flex-row justify-center items-center gap-7 text-center text-black text-2xl font-normal  leading-7">
-              <li>Terms</li>
-              <li>Privacy</li>
-              <li>Our app</li>
+              <li className="transition ease-in-out duration-300 hover:scale-110 cursor-pointer">
+                Terms
+              </li>
+              <li className="transition ease-in-out duration-300 hover:scale-110 cursor-pointer">
+                Privacy
+              </li>
+              <li className="transition ease-in-out duration-300 hover:scale-110 cursor-pointer">
+                Our app
+              </li>
             </ul>
           </div>
         </div>
