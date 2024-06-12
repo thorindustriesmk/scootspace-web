@@ -11,7 +11,7 @@ function WhyScootspace() {
         <div className="flex flex-col ml-24 mr-24 w-full">
           <div className="flex flex-col justify-center items-center text-black gap-9 ">
             <div className="flex flex-col justify-center items-center gap-5 ">
-              <div className="text-black font-black text-5xl leading-10 ">
+              <div className="text-black font-aptos-black text-5xl leading-10 ">
                 Why ScootSpace?
               </div>
               <div className="max-w-screen-xl text-center text-black text-xl  font-['Sofia Pro'] leading-snug">
