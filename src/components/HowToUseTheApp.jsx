@@ -11,10 +11,10 @@ function HowToUseTheApp() {
         <div className="flex flex-col ml-16 mr-16 w-full">
           <div className="flex flex-col justify-center items-center text-black gap-9 ">
             <div className="flex flex-col justify-center items-center gap-6 ">
-              <div className="text-black font-sofia font-black text-5xl leading-10 ">
+              <div className="text-black  font-black text-5xl leading-10 ">
                 How to use the app?
               </div>
-              <div className="max-w-screen-xl text-center text-black lg:text-lg text-base font-light font-sofia leading-snug">
+              <div className="max-w-screen-xl text-center text-black lg:text-lg text-base  leading-snug">
                 Getting started with our app is a walk in the park. Check the
                 steps to your right, and you'll be smoothly navigating our
                 platform. Discover the simplicity of urban mobility with
@@ -30,10 +30,10 @@ function HowToUseTheApp() {
                   alt=""
                   width={500}
                 />
-                <div className="text-start pl-4 text-teal-500 text-lg font-normal font-sofia">
+                <div className="text-start pl-4 text-teal-500 text-lg font-normal ">
                   Download the app
                 </div>
-                <div className="w-64 text-black text-base font-light text-start m-8 font-sofia leading-tight">
+                <div className="w-64 text-black text-base text-start m-8  leading-tight">
                   1. Open your smartphones app store (iOS App Store or Google
                   Play Store).
                   <div className="py-2" />
@@ -50,10 +50,10 @@ function HowToUseTheApp() {
                   alt=""
                   width={500}
                 />
-                <div className="text-start pl-4 text-teal-500 text-lg font-normal font-sofia">
+                <div className="text-start pl-4 text-teal-500 text-lg font-normal ">
                   Scan the code
                 </div>
-                <div className="w-64 text-black text-base font-light text-start m-8 font-sofia leading-tight">
+                <div className="w-64 text-black text-base text-start m-8  leading-tight">
                   1. Approach the ScootSpace parking machine located within the
                   parking zone.
                   <div className="py-2" />
@@ -72,10 +72,10 @@ function HowToUseTheApp() {
                   alt=""
                   width={500}
                 />
-                <div className="text-start text-teal-500 text-lg pl-4 font-normal font-sofia">
+                <div className="text-start text-teal-500 text-lg pl-4 font-normal ">
                   Lock the scooter
                 </div>
-                <div className="w-64 text-black text-base font-light text-start m-8 font-sofia leading-tight">
+                <div className="w-64 text-black text-base text-start m-8  leading-tight">
                   1. Once the QR code is successfully scanned, the app will
                   confirm the parking process.
                   <div className="py-2" />

@@ -2,4 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer base {
+  @font-face {
+    font-family: "Aptos";
+    src: url("./assets/fonts/aptos-font/aptos.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Aptos-bold";
+    src: url("./assets/fonts/aptos-font/aptos-bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Aptos-black";
+    src: url("./assets/fonts/aptos-font/aptos-black.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Aptos-light";
+    src: url("./assets/fonts/aptos-font/aptos-light.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Aptos-semibold";
+    src: url("./assets/fonts/aptos-font/aptos-semibold.ttf") format("truetype");
+  }
+}

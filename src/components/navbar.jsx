@@ -10,7 +10,7 @@ function Navbar() {
         <div className="flex basis-full max-lg:invisible ml-28">
           <div className="flex basis-full flex-row justify-start gap-8 items-center font-normal  ">
             <h2>
-              <a href="#">About Us</a>{" "}
+              <a href="#home">About Us</a>
             </h2>
             <h2>
               <a href="#howToPark">How to park</a>

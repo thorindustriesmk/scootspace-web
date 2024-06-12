@@ -32,14 +32,14 @@ function MobileFooter() {
           </div>
           <div className="flex flex-col gap-5 justify-between w-full items-center ">
             <div className="flex flex-row justify-around w-full items-center py-4 ">
-              <div className="text-center text-black text-lg font-bold font-sofia leading-3">
+              <div className="text-center text-black text-lg font-bold  leading-3">
                 About Us
               </div>
-              <div className="text-center text-black text-lg font-bold font-sofia leading-3">
+              <div className="text-center text-black text-lg font-bold  leading-3">
                 {" "}
                 Our office{" "}
               </div>
-              <div className="text-center text-black text-lg font-bold font-sofia leading-3">
+              <div className="text-center text-black text-lg font-bold  leading-3">
                 {" "}
                 Our app{" "}
               </div>
@@ -49,7 +49,7 @@ function MobileFooter() {
 
         <div className="flex flex-col gap-5 justify-between w-full items-center">
           <div className="flex flex-row justify-around w-full items-center ">
-            <div className="text-center text-borderColor text-3xl font-black font-sofia flex justify-center leading-10">
+            <div className="text-center text-borderColor text-3xl font-black  flex justify-center leading-10">
               Scootspace
             </div>
           </div>

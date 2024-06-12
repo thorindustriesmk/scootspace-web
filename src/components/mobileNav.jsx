@@ -35,7 +35,7 @@ const MobileNav = ({ showSidebar, toggleSidebar }) => {
             </button>
           </div>
 
-          <ul className="text-borderColor flex flex-col items-start gap-10 text-3xl font-sofia font-semibold mt-12 md:ml-9 ml-2">
+          <ul className="text-borderColor flex flex-col items-start gap-10 text-3xl  font-semibold mt-12 md:ml-9 ml-2">
             <li className="">
               <a
                 href="#howToPark"
@@ -72,7 +72,7 @@ const MobileNav = ({ showSidebar, toggleSidebar }) => {
               </a>
             </li>
           </ul>
-          <div className=" flex flex-col items-start gap-6  font-sofia mt-36 md:ml-9 ml-2">
+          <div className=" flex flex-col items-start gap-6   mt-36 md:ml-9 ml-2">
             <button className="w-40 h-12 px-2.5 py-2 bg-teal-500 rounded-3xl border-2 border-teal-500 justify-center items-center gap-2.5 inline-flex text-white text-xl font-medium ">
               The App
             </button>

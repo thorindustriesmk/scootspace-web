@@ -12,6 +12,8 @@ import Locations from "./components/Locations.jsx";
 import Footer from "./components/Footer.jsx";
 import MobileFooter from "./components/MobileFooter.jsx";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import Favicon from "react-favicon";
+import ScootSpaceLogo from "./assets/logo/logo.svg";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -35,7 +37,8 @@ function App() {
   };
 
   return (
-    <div className={`App flex flex-col justify-center items-center`}>
+    <div className={`App flex flex-col justify-center items-center font-aptos`}>
+      <Favicon url={ScootSpaceLogo} />
       <SpeedInsights />
       {isMobile ? (
         <MobileNav showSidebar={showSidebar} toggleSidebar={toggleSidebar} /> // Render Topbar for screen size less than or equal to 1024px
