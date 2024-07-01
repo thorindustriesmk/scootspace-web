@@ -44,7 +44,7 @@ function HowToPark() {
       >
         <div className="flex items-start flex-col xl:w-2/4 w-full mt-12">
           <div className="flex flex-col gap-5 xl:ml-28  sm:mr-0 ml-0 xl:items-start items-center h-auto ">
-            <div className="text-black text-5xl font-black leading-10 xl:text-start text-center ">
+            <div className="text-black text-5xl font-aptos-black leading-10 xl:text-start text-center ">
               How to park?
             </div>
             <div className="text-black text-sm xl:text-start text-center max-w-2xl xl:max-w-xl sm:text-lg leading-snug">
