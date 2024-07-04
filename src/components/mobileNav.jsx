@@ -17,7 +17,7 @@ const MobileNav = ({ showSidebar, toggleSidebar }) => {
         </div>
       </div>
 
-      <div className={`flex  w-full fixed  overflow-hidden duration-200 `}>
+      <div className={`flex w-full fixed  overflow-hidden duration-200 `}>
         <div
           className={`fixed top-0 left-0 h-screen w-full z-10 bg-black bg-opacity-50 ${
             showSidebar ? "fixed" : "hidden"

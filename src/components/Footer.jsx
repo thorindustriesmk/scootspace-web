@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="flex flex-row xl:w-full w-[100%] p-10 border-t-2">
+    <div className="flex flex-row xl:w-full w-[100%] border-t-2">
       <div className="flex basis-2/12 gap-6 justify-center items-center w-full">
         <img
           className="w-full px-8"
@@ -17,8 +17,8 @@ function Footer() {
         />
       </div>
 
-      <div className="flex basis-10/12 flex-col gap-6 items-end pr-8  w-full">
-        <ul className="flex flex-row gap-7 text-center text-black text-2xl font-normal  leading-7">
+      <div className="flex basis-10/12 flex-col gap-6 items-end w-full">
+        <ul className="flex flex-row gap-7 text-center text-black text-2xl font-normal leading-7">
           <li>
             <img src={linkedin} alt="" />
           </li>

@@ -1,0 +1,61 @@
+{
+  "Hero": {
+    "HeroTitle": "Scoot In, Secure Up Mirë se vini në ScootSpace Parking!",
+    "HeroSubtitle": "Qendrat tona në Shkup ofrojnë komoditet, qëndrueshmëri dhe siguri. Shijoni pagesa të lehta, tarifim falas dhe paqe mendore ndërsa eksploroni qytetin. Zbuloni një mënyrë më të pastër dhe më të gjelbër për të lëvizur.",
+    "HeroButton1": "Shkarko aplikacionin",
+    "HeroButton2": "Si të parkosh?"
+  },
+  "AboutScootspace": {
+    "AboutScootspaceTitle": "Rreth ScootSpace?",
+    "AboutScootspaceSubtitle": "Në ScootSpace, ne jemi më shumë se thjesht një objekt parkimi; ne jemi një revolucion në lëvizjen urbane. Si kompania e vetme që ofron zgjidhje parkimi për skuter elektrike në vend, angazhimi ynë për komoditetin, qëndrueshmërinë dhe sigurinë është i pakrahasueshëm.",
+    "AboutScootspaceCards": {
+      "CardTitle1": "Ofruesi Ekskluziv",
+      "CardSubtitle1": "ScootSpace është ofruesi i vetëm i shërbimeve të parkimit të skuterëve elektrikë në Maqedoninë e Veriut. Ne jemi partneri juaj i përkushtuar dhe i besuar në ngritjen e përvojës suaj të lëvizshmërisë urbane.",
+      "CardTitle12": "Karikimi Falas",
+      "CardSubtitle2": "Ne bëjmë një milje shtesë duke ofruar tarifim falas për skuterin tuaj. Thuaj lamtumirë mundimit të gjetjes së stacioneve të karikimit; ju kemi mbuluar.",
+      "CardTitle3": "Siguria",
+      "CardSubtitle3": "Qetësia juaj e mendjes është parësore. Objektet tona janë të pajisura me veçori të nivelit të lartë të sigurisë, duke siguruar që skuterin tuaj gjithmonë të jetë në duar të sigurta kur zgjidhni ScootSpace."
+    }
+  },
+  "HowToPark": {
+    "HowToParkTitle": "Si të parkosh?",
+    "HowToParkSubtitle": "Parkimi i skuterit tuaj elektrik me ScootSpace është i lehtë. Thjesht gjeni qendrën më të afërt ScootSpace duke përdorur aplikacionin tonë, sigurohuni për skuterin tuaj dhe bëni një pagesë të lehtë. Është aq e thjeshtë! Pa rezervime, pa komplikime. Përjetoni komoditetin maksimal në mobilitetin urban me ScootSpace.",
+    "HowToParkCards": {
+      "CardTitle1": "Skaneri i kodit QR",
+      "CardSubtitle1": "Mund të skanohet nga aplikacioni ScootSpace",
+      "CardTitle12": "Treguesi LED",
+      "CardSubtitle2": "Hap/Mbyll",
+      "CardTitle3": "Karikuesi i skuterit",
+      "CardSubtitle3": "Shumica e skuterëve të mbështetur",
+      "CardTitle4": "Mbyllja e skuterit",
+      "CardSubtitle4": "Mbyllet automatikisht."
+    }
+  },
+  "HowToUseTheApp": {
+    "HowToUseTheAppTitle": "Si të përdorni aplikacionin?",
+    "HowToUseTheAppSubtitle": "Fillimi me aplikacionin tonë është një shëtitje në park. Kontrolloni hapat në të djathtë dhe do të lundroni me lehtësi në platformën tonë. Zbuloni thjeshtësinë e mobilitetit urban me ScootSpace!",
+    "HowToUseTheAppCards": {
+      "CardTitle1": "Shkarkoni aplikacionin",
+      "Card1Step1": "1. Hapni dyqanin e aplikacioneve të smartfonit tuaj (iOS App Store ose Google Play Store).",
+      "Card1Step2": "2. Kërkoni për ScootSpace dhe shkarkoni aplikacionin zyrtar.",
+      "Card1Step3": "3. Instaloni aplikacionin në pajisjen tuaj dhe hapeni atë.",
+      "CardTitle2": "Skano kodin",
+      "Card2Step1": "1. Afroheni te makina e parkimit ScootSpace që ndodhet brenda zonës së parkimit.",
+      "Card2Step2": "2. Hapni aplikacionin ScootSpace dhe navigoni te opsioni 'Parko Skuterin'.",
+      "Card2Step3": "3. Përdorni skanerin e integruar të kodit QR të aplikacionit për të skanuar kodin QR të shfaqur në makinën e parkimit.",
+      "CardTitle3": "Mbyllni skuterin",
+      "Card3Step1": "1. Pasi të jetë skanuar me sukses kodi QR, aplikacioni do të konfirmojë procesin e parkimit.",
+      "Card3Step2": "2. Shtypni butonin 'Mbyll' në ndërfaqen e aplikacionit.",
+      "Card3Step3": "3. Mekanizmi i mbylljes së skuterit tuaj do të aktivizohet, duke e siguruar atë në vendin e parkimit."
+    }
+  },
+  "PricingPlan": {
+    "PricingPlanTitle": "Plani i Çmimeve",
+    "PricingPlanSubtitle": "Ne besojmë në mbajtjen e gjërave të thjeshta dhe me buxhet. Struktura jonë e çmimeve përbëhet nga një plan i vetëm:",
+    "PricingPlanParagraph": "Me ScootSpace, ju merrni më shumë sesa thjesht parkim; ju merrni një zgjidhje pa probleme dhe gjithëpërfshirëse për skuterin tuaj elektrik.Shijoni paqen mendore duke e ditur se skuteri juaj është i sigurt, i karikuar dhe gati për të shkuar sa herë që ju nevojitet. Zbuloni komoditetin, sigurinë dhe qëndrueshmërinë që ofron ScootSpace për vetëm 120 denarë në orë."
+  },
+  "Location": {
+    "LocationTitle": "Vendndodhjet ScootSpace",
+    "LocationSubtitle": "Zbuloni qendrat strategjike të vendosura të ScootSpace në gjithë qytetin për parkim të lehtë dhe të sigurt të skuterëve elektrikë. Këtu janë disa nga vendndodhjet tona kryesore:"
+  }
+}

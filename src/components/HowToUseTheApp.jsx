@@ -7,12 +7,12 @@ function HowToUseTheApp() {
   return (
     <div
       id="HowToUseTheApp"
-      className="flex flex=col w-full h-screen items-center justify-center pb-10"
+      className="flex flex=col w-full min-h-screen items-center justify-center pb-10"
     >
       <div className="flex flex-col ml-16 mr-16 w-full">
         <div className="flex flex-col justify-center items-center text-black gap-9 ">
           <div className="flex flex-col justify-center items-center gap-6 ">
-            <div className="text-black  font-aptos-black text-5xl leading-10 ">
+            <div className="text-black  font-aptos-black text-center text-5xl leading-10 ">
               How to use the app?
             </div>
             <div className="max-w-screen-xl text-center text-black lg:text-lg text-base  leading-snug">

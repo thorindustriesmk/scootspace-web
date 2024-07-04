@@ -4,33 +4,35 @@ function Hero({ slideTo }) {
   return (
     <div
       id="home"
-      className="flex pt-20 w-full max-w-screen-xl h-screen bg-heroBg flex-col xl:flex-row items-center justify-center pb-10 "
+      className="flex flex-col min-h-screen pt-10 gap-4 text-center w-full xl:flex-row xl:text-start items-center justify-center 2xl:gap-64 lg:pt-[120px]"
     >
-      <div className="flex flex-col lg:flex-row justify-center w-full">
-        <div className="flex flex-col text-center xl:text-start items-center xl:items-start w-full lg:w-auto gap-5 px-4 sm:px-8 pt-10 justify-start">
-          <div className="font-aptos-black sm:text-5xl w-full lg:w-[531px] flex align-center max-xl:justify-center">
-            Scoot In, Secure Up Welcome to ScootSpace Parking!
-          </div>
-          <div className="text-black text-base w-full lg:w-[531px]">
-            Our hubs in Skopje offer convenience, sustainability, and security.
-            Enjoy easy payments, free charging, and peace of mind as you explore
-            the city. Discover a cleaner, greener way to get around."
-          </div>
-          <div className="flex flex-col sm:flex-row items-center justify-center xl:justify-start  gap-5 w-full">
-            <button className="transition ease-in-out duration-150 hover:scale-110 flex w-full sm:w-44 font-aptos-semibold justify-center items-center text-white text-center py-2 px-3 border-primary bg-primary gap-2.5 border-2 rounded-2xl">
-              Download the App
-            </button>
-            <button
-              onClick={() => slideTo("Locations")}
-              className="transition ease-in-out duration-150 hover:scale-110 flex w-full sm:w-44 font-aptos-semibold justify-center items-center text-center text-black py-2 px-3 bg-white rounded-2xl gap-2.5 border-2 border-teal-500"
-            >
-              How to park?
-            </button>
-          </div>
+      <div className="flex flex-col pt-10 w-full gap-4 md:max-w-xl">
+        <div className="flex font-aptos-black text-2xl sm:text-5xl ">
+          Scoot In, Secure Up Welcome to ScootSpace Parking!
+        </div>
+        <div className="text-black text-base w-full ">
+          Our hubs in Skopje offer convenience, sustainability, and security.
+          Enjoy easy payments, free charging, and peace of mind as you explore
+          the city. Discover a cleaner, greener way to get around.
+        </div>
+        <div className="flex flex-col items-center justify-center sm:flex-row xl:justify-start gap-5 w-full">
+          <button className="transition ease-in-out duration-150 hover:scale-110 flex w-44 font-aptos-semibold justify-center items-center text-white text-center py-2 px-3 border-primary bg-primary gap-2.5 border-2 rounded-2xl">
+            Download the App
+          </button>
+          <button
+            onClick={() => slideTo("Locations")}
+            className="transition ease-in-out duration-150 hover:scale-110 flex w-44 font-aptos-semibold justify-center items-center text-center text-black py-2 px-3 bg-white rounded-2xl gap-2.5 border-2 border-teal-500"
+          >
+            How to park?
+          </button>
         </div>
       </div>
-      <div className="flex items-center justify-center pt-14 lg:pt-24 w-full lg:w-auto">
-        <img src={heroIcon} alt="heroImage" className="w-fit xl:w-screen" />
+      <div className="flex items-center justify-center w-auto">
+        <img
+          src={heroIcon}
+          alt="heroImage"
+          className="lg:max-w-xl 2xl:max-w-2xl xl:w-auto"
+        />
       </div>
     </div>
   );

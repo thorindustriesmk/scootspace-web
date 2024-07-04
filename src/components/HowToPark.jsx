@@ -29,7 +29,7 @@ function HowToPark() {
   return (
     <div
       id="HowToPark"
-      className="flex max-w-screen-3xl h-screen pt-10 w-full bg-howToParkBg xl:flex-row flex-col"
+      className="flex max-w-screen-3xl min-h-screen pt-10 w-full bg-howToParkBg xl:flex-row flex-col"
     >
       <div className="flex items-start flex-col xl:w-2/4 w-full mt-12">
         <div className="flex flex-col gap-5 xl:ml-28  sm:mr-0 ml-0 xl:items-start items-center h-auto ">

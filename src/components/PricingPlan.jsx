@@ -5,14 +5,14 @@ function PricingPlan() {
   return (
     <div
       id="PricingPlan"
-      className="flex flex-col justify-center items-center h-screen xl:flex-row xl:max-w-full w-[100%]  bg-b-pricingPlanBg gap-5"
+      className="flex flex-col justify-center items-center min-h-screen xl:flex-row xl:max-w-full w-[100%] bg-b-pricingPlanBg gap-5 p-4"
     >
       <div className="flex flex-col max-w-full xl:w-2/6 justify-end xl:m">
-        <div className="flex flex-col items-end gap-6">
-          <div className="text-black font-aptos-black text-5xl leading-10  text-end ">
+        <div className="flex flex-col lg:items-end gap-6">
+          <div className="text-black font-aptos-black text-5xl leading-10 lg:text-end">
             Pricing Plan
           </div>
-          <div className="text-black text-lg text-end max-w-md  leading-snug">
+          <div className="text-black text-lg lg:text-end max-w-md leading-snug">
             We believe in keeping things straightforward and budget-friendly.
             Our pricing structure consists of a single plan:
           </div>
@@ -20,7 +20,7 @@ function PricingPlan() {
       </div>
       <div className="flex flex=col max-w-5xl xl:w-2/6 justify-center items-center">
         <div className="flex flex-col items-center">
-          <div className="mainrectangle flex flex-col gap-10 justify-between bg-gradient-to-b from-teal-500 to-teal-700  rounded-3xl border-4 border-white">
+          <div className="mainrectangle flex flex-col gap-4 lg:gap-10 justify-between bg-gradient-to-b from-teal-500 to-teal-700 rounded-3xl border-4 border-white">
             <div className="flex flex-row justify-between items-center pt-10 px-5 gap-5 ">
               <div className=" text-white text-start justify-center items-center xl:text-4xl text-4xl max-w-[200px] font-black leading-tight">
                 Price per hour
@@ -60,7 +60,7 @@ function PricingPlan() {
               </ul>
             </div>
             <div className="flex flex-col items-center justify-end py-10">
-              <button className="flex w-44 justify-center items-center font-aptos-semibold text-center text-black py-3 px-4 bg-white rounded-2xl gap-2.5 border-2 border-teal-500  ">
+              <button className="transition ease-in-out duration-400 hover:scale-110 flex w-44 justify-center items-center font-aptos-semibold text-center text-black py-3 px-4 bg-white rounded-2xl gap-2.5 border-2 border-teal-500  ">
                 Buy Now!
               </button>
             </div>
