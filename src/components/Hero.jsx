@@ -1,6 +1,8 @@
 import heroIcon from "../assets/icons/heroIcon.svg";
+import { useTranslation } from "react-i18next";
 
 function Hero({ slideTo }) {
+  const { t } = useTranslation();
   return (
     <div
       id="home"
@@ -8,7 +10,7 @@ function Hero({ slideTo }) {
     >
       <div className="flex flex-col pt-10 w-full gap-4 md:max-w-xl">
         <div className="flex font-aptos-black text-2xl sm:text-5xl ">
-          Scoot In, Secure Up Welcome to ScootSpace Parking!
+          {t("hi")}
         </div>
         <div className="text-black text-base w-full ">
           Our hubs in Skopje offer convenience, sustainability, and security.
