@@ -1,9 +1,11 @@
 import React from "react";
 import guide1 from "../assets/steps/guide1.png";
 import guide2 from "../assets/steps/guide2.png";
+import { useTranslation } from "react-i18next";
 import guide3 from "../assets/steps/guide3.png";
 
 function HowToUseTheApp() {
+  const { t } = useTranslation();
   return (
     <div
       id="HowToUseTheApp"
@@ -13,13 +15,10 @@ function HowToUseTheApp() {
         <div className="flex flex-col justify-center items-center text-black gap-9 ">
           <div className="flex flex-col justify-center items-center gap-6 ">
             <div className="text-black  font-aptos-black text-center text-5xl leading-10 ">
-              How to use the app?
+              {t("HowToUseTheApp.Title")}
             </div>
             <div className="max-w-screen-xl text-center text-black lg:text-lg text-base  leading-snug">
-              Getting started with our app is a walk in the park. Check the
-              steps to your right, and you'll be smoothly navigating our
-              platform. Discover the simplicity of urban mobility with
-              ScootSpace!
+              {t("HowToUseTheApp.Subtitle")}
             </div>
           </div>
 
@@ -27,48 +26,42 @@ function HowToUseTheApp() {
             <div className="flex flex-col w-80 h-[600px] gap-7 bg-white rounded-3xl  border border-teal-500 border-opacity-20 shadow-[0px_20px_25px_6px_rgba(0,167,157,0.16)]">
               <img className="rounded-t-3xl" src={guide1} alt="" width={500} />
               <div className="text-start pl-4 text-teal-500 text-lg font-normal ">
-                Download the app
+                {t("HowToUseTheApp.Cards.Card1Title1")}
               </div>
               <div className="w-64 text-black text-base text-start m-8  leading-tight">
-                1. Open your smartphones app store (iOS App Store or Google Play
-                Store).
+                {t("HowToUseTheApp.Cards.Card1Step1")}
                 <div className="py-2" />
-                2.Search for ScootSpace and download the official app.
+                {t("HowToUseTheApp.Cards.Card1Step2")}
                 <div className="py-2" />
-                3.Install the app on your device and open it.
+                {t("HowToUseTheApp.Cards.Card1Step3")}
               </div>
             </div>
 
             <div className="flex flex-col w-80 h-[600px] gap-7 bg-white rounded-3xl  border border-teal-500 border-opacity-20 shadow-[0px_20px_25px_6px_rgba(0,167,157,0.16)]">
               <img className="rounded-t-3xl" src={guide2} alt="" width={500} />
               <div className="text-start pl-4 text-teal-500 text-lg font-normal ">
-                Scan the code
+                {t("HowToUseTheApp.Cards.CardTitle2")}
               </div>
               <div className="w-64 text-black text-base text-start m-8  leading-tight">
-                1. Approach the ScootSpace parking machine located within the
-                parking zone.
+                {t("HowToUseTheApp.Cards.Card2Step1")}
                 <div className="py-2" />
-                2.Open the ScootSpace app and navigate to the "Park Scooter"
-                option.
+                {t("HowToUseTheApp.Cards.Card2Step2")}
                 <div className="py-2" />
-                3.Use the app's built-in QR code scanner to scan the QR code
-                displayed on the parking machine.
+                {t("HowToUseTheApp.Cards.Card2Step3")}
               </div>
             </div>
 
             <div className="flex flex-col w-80 h-[600px] gap-7 bg-white rounded-3xl  border border-teal-500 border-opacity-20 shadow-[0px_20px_25px_6px_rgba(0,167,157,0.16)]">
               <img className="rounded-t-3xl" src={guide3} alt="" width={500} />
               <div className="text-start text-teal-500 text-lg pl-4 font-normal ">
-                Lock the scooter
+                {t("HowToUseTheApp.Cards.CardTitle3")}
               </div>
               <div className="w-64 text-black text-base text-start m-8  leading-tight">
-                1. Once the QR code is successfully scanned, the app will
-                confirm the parking process.
+                {t("HowToUseTheApp.Cards.Card3Step1")}
                 <div className="py-2" />
-                2.Press the "Lock" button on the app's interface.
+                {t("HowToUseTheApp.Cards.Card3Step2")}
                 <div className="py-2" />
-                3.Your scooter's locking mechanism will activate, securing it in
-                place within the parking slot.
+                {t("HowToUseTheApp.Cards.Card3Step3")}
               </div>
             </div>
           </div>

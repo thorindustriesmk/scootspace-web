@@ -1,42 +1,42 @@
 {
-  "hi": "Pershednetje",
   "Hero": {
-    "HeroTitle": "Scoot In, Secure Up Welcome to ScootSpace Parking!",
-    "HeroSubtitle": "Our hubs in Skopje offer convenience, sustainability, and security. Enjoy easy payments, free charging, and peace of mind as you explore the city. Discover a cleaner, greener way to get around.",
-    "HeroButton1": "Download the App",
-    "HeroButton2": "How to Park?"
+    "Title": "Scoot In, Secure Up",
+    "Title2": "Welcome to ScootSpace Parking!",
+    "Subtitle": "Our hubs in Skopje offer convenience, sustainability, and security. Enjoy easy payments, free charging, and peace of mind as you explore the city. Discover a cleaner, greener way to get around.",
+    "Button1": "Download the App",
+    "Button2": "How to Park?"
   },
   "AboutScootspace": {
-    "AboutScootspaceTitle": "About ScootSpace?",
-    "AboutScootspaceSubtitle": "At ScootSpace, we're more than just a parking facility; we're a revolution in urban mobility. As the sole company offering electric scooter parking solutions in the country, our commitment to convenience, sustainability, and security is unrivaled.",
-    "AboutScootspaceCards": {
-      "CardTitle1": "Exclusive Provider",
-      "CardSubtitle1": "ScootSpace is the sole provider of electric scooter parking services in North Macedonia. We are your dedicated and trusted partner in elevating your urban mobility experience.",
-      "CardTitle12": "Free Charging",
-      "CardSubtitle2": "We go the extra mile by offering free charging for your scooter. Say goodbye to the hassle of finding charging stations; we've got you covered.",
-      "CardTitle3": "Safety",
-      "CardSubtitle3": "Your peace of mind is paramount. Our facilities are equipped with top-tier security features, ensuring your scooter is always in safe hands when you choose ScootSpace."
+    "Title": "About ScootSpace",
+    "Subtitle": "At ScootSpace, we're more than just a parking facility; we're a revolution in urban mobility. As the sole company offering electric scooter parking solutions in the country, our commitment to convenience, sustainability, and security is unrivaled.",
+    "Cards": {
+      "Title1": "Exclusive Provider",
+      "Subtitle1": "ScootSpace is the sole provider of electric scooter parking services in North Macedonia. We are your dedicated and trusted partner in elevating your urban mobility experience.",
+      "Title2": "Free Charging",
+      "Subtitle2": "We go the extra mile by offering free charging for your scooter. Say goodbye to the hassle of finding charging stations; we've got you covered.",
+      "Title3": "Safety",
+      "Subtitle3": "Your peace of mind is paramount. Our facilities are equipped with top-tier security features, ensuring your scooter is always in safe hands when you choose ScootSpace."
     }
   },
   "HowToPark": {
-    "HowToParkTitle": "How to Park?",
-    "HowToParkSubtitle": "Parking your electric scooter with ScootSpace is a breeze. Simply locate the nearest ScootSpace hub using our app, secure your scooter, and make an easy payment. It's that simple! No reservations, no complications. Experience the ultimate convenience in urban mobility with ScootSpace.",
-    "HowToParkCards": {
-      "CardTitle1": "QR Code Scanner",
-      "CardSubtitle1": "Can be scanned by the ScootSpace app",
-      "CardTitle12": "LED Indicator",
-      "CardSubtitle2": "Open/Close",
-      "CardTitle3": "Scooter Charger",
-      "CardSubtitle3": "Most scooters supported",
-      "CardTitle4": "Locking Bar",
-      "CardSubtitle4": "Closes automatically"
+    "Title": "How to Park?",
+    "Subtitle": "Parking your electric scooter with ScootSpace is a breeze. Simply locate the nearest ScootSpace hub using our app, secure your scooter, and make an easy payment. It's that simple! No reservations, no complications. Experience the ultimate convenience in urban mobility with ScootSpace.",
+    "Cards": {
+      "Title1": "QR Code Scanner",
+      "Subtitle1": "Can be scanned by the ScootSpace app",
+      "Title2": "LED Indicator",
+      "Subtitle2": "Open/Close",
+      "Title3": "Scooter Charger",
+      "Subtitle3": "Most scooters supported",
+      "Title4": "Locking Bar",
+      "Subtitle4": "Closes automatically"
     }
   },
   "HowToUseTheApp": {
-    "HowToUseTheAppTitle": "How to Use the App?",
-    "HowToUseTheAppSubtitle": "Getting started with our app is a walk in the park. Check the steps to your right, and you'll be smoothly navigating our platform. Discover the simplicity of urban mobility with ScootSpace!",
-    "HowToUseTheAppCards": {
-      "CardTitle1": "Download the App",
+    "Title": "How to Use the App?",
+    "Subtitle": "Getting started with our app is a walk in the park. Check the steps to your right, and you'll be smoothly navigating our platform. Discover the simplicity of urban mobility with ScootSpace!",
+    "Cards": {
+      "Card1Title1": "Download the App",
       "Card1Step1": "1. Open your smartphone's app store (iOS App Store or Google Play Store).",
       "Card1Step2": "2. Search for ScootSpace and download the official app.",
       "Card1Step3": "3. Install the app on your device and open it.",
@@ -51,12 +51,34 @@
     }
   },
   "PricingPlan": {
-    "PricingPlanTitle": "Pricing Plan",
-    "PricingPlanSubtitle": "We believe in keeping things straightforward and budget-friendly. Our pricing structure consists of a single plan:",
-    "PricingPlanParagraph": "With ScootSpace, you get more than just parking; you get a hassle-free and comprehensive solution for your electric scooter. Enjoy peace of mind knowing that your scooter is safe, charged, and ready to go whenever you need it. Discover the convenience, security, and sustainability that ScootSpace offers for just 120 denars per hour."
+    "Title": "Pricing Plan",
+    "Subtitle": "We believe in keeping things straightforward and budget-friendly. Our pricing structure consists of a single plan:",
+    "Paragraph1": "With ScootSpace, you get more than just parking; you get a hassle-free and comprehensive solution for your electric scooter.",
+    "Paragraph2": "Enjoy peace of mind knowing that your scooter is safe, charged, and ready to go whenever you need it. Discover the convenience, security, and sustainability that ScootSpace offers for just 120 denars per hour.",
+    "PricingCard": {
+      "Title": "Price per hour",
+      "Price": "2",
+      "den": "mkd/h",
+      "Features": {
+        "Feature1": "Secure Scooter Lock",
+        "Feature2": "Easy and Safe Payment Options",
+        "Feature3": "Free Scooter Charger",
+        "Feature4": "Prime Location Advantage"
+      },
+      "BuyNowButton": "Buy Now"
+    }
   },
   "Location": {
-    "LocationTitle": "ScootSpace Locations",
-    "LocationSubtitle": "Discover ScootSpace's strategically placed hubs throughout the city for easy and secure electric scooter parking. Here are some of our prime locations:"
+    "Title": "ScootSpace Locations",
+    "Subtitle": "Discover ScootSpace's strategically placed hubs throughout the city for easy and secure electric scooter parking.",
+    "Subtitle2": "Here are some of our prime locations:"
+  },
+  "Navbar": {
+    "Home": "Home",
+    "About": "About Us",
+    "HowToPark": "How to Park",
+    "HowToUseTheApp": "How to Use the App",
+    "PricingPlan": "Pricing Plan",
+    "Location": "Locations"
   }
 }

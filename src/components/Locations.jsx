@@ -1,7 +1,9 @@
 import React from "react";
 import locationMap from "../assets/background/locationMap.svg";
+import { useTranslation } from "react-i18next";
 
 function Locations() {
+  const { t } = useTranslation();
   return (
     <div
       id="Locations"
@@ -9,13 +11,12 @@ function Locations() {
     >
       <div className="px-4 py-8 sm:px-8 sm:py-12 gap-4">
         <div className="text-black text-center font-aptos-black text-5xl leading-10">
-          ScootSpace Locations
+          {t("Location.Title")}
         </div>
         <div className="text-center text-black lg:text-lg text-base pt-2 leading-snug">
-          Discover ScootSpace's strategically placed hubs throughout the city
-          for easy and secure electric scooter parking.
+          {t("Location.Subtitle")}
           <br />
-          Here are some of our prime locations:
+          {t("Location.Subtitle2")}
         </div>
       </div>
       <div className="flex max-w-7xl w-[90%] sm:w-full items-center justify-center">

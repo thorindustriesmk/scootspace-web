@@ -2,8 +2,23 @@
 
 import logo from "../assets/logo/logo.svg";
 import dropdown from "../assets/icons/navdrop.svg";
+import { useState } from "react";
+import i18n from "./i18n";
 
 const MobileNav = ({ showSidebar, toggleSidebar }) => {
+  function handleNavigation(path) {
+    window.location.replace("/" + path);
+    toggleSidebar();
+    // window.location.assign(path);
+  }
+  const [handleDropdown, setHandleDropdown] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
+
+  const chooseLanguage = (e) => {
+    e.preventDefault();
+    i18n.changeLanguage(e.target.value);
+    setSelectedLanguage(e.target.value);
+  };
   return (
     <>
       <div className="flex top-0 fixed bg-white w-full flex-row h-20 items-center justify-between px-12 border-b border-gray-300 border-opacity-0.5 shadow-md shadow-white text-base">
@@ -37,46 +52,52 @@ const MobileNav = ({ showSidebar, toggleSidebar }) => {
 
           <ul className="text-borderColor flex flex-col items-start gap-10 text-3xl  font-semibold mt-12 md:ml-9 ml-2">
             <li className="">
-              <a
-                href="#howToPark"
+              <button
+                onClick={() => handleNavigation("#AboutScootspace")}
                 className="hover:border-b-2 hover:border-borderColor p-2 hover:rounded-e-md hover:rounded-s-md "
               >
                 About Us
-              </a>
+              </button>
             </li>
             <li>
-              <a
+              <button
                 href="#howToPark"
                 className="hover:border-b-2 hover:border-borderColor p-2 hover:rounded-e-md hover:rounded-s-md "
-                onClick={toggleSidebar}
+                onClick={() => handleNavigation("#HowToPark")}
               >
                 How to park
-              </a>
+              </button>
             </li>
             <li>
-              <a
+              <button
                 href="#PricingPlan"
-                onClick={toggleSidebar}
+                onClick={() => handleNavigation("#PricingPlan")}
                 className="hover:border-b-2 hover:border-borderColor p-2 hover:rounded-e-md hover:rounded-s-md"
               >
                 Pricing
-              </a>
+              </button>
             </li>
             <li>
-              <a
+              <button
                 href="#Locations"
-                onClick={toggleSidebar}
+                onClick={() => handleNavigation("#Locations")}
                 className="hover:border-b-2 hover:border-borderColor p-2 hover:rounded-e-md hover:rounded-s-md"
               >
                 Locations
-              </a>
+              </button>
             </li>
           </ul>
-          <div className=" flex flex-col items-start gap-6   mt-36 md:ml-9 ml-2">
-            <button className="w-40 h-12 px-2.5 py-2 bg-teal-500 rounded-3xl border-2 border-teal-500 justify-center items-center gap-2.5 inline-flex text-white text-xl font-medium ">
-              The App
-            </button>
-            <button className="h-14 w-36  items-center justify-start flex flex-row text-black gap-3 text-xl ">
+          <div className=" hs-dropdown flex flex-col items-start gap-6 mt-36 md:ml-9 ml-2">
+            <button
+              className="h-14 w-36  items-center justify-start flex flex-row text-black gap-3 text-xl "
+              onClick={
+                handleDropdown
+                  ? () => setHandleDropdown(false)
+                  : () => setHandleDropdown(true)
+              }
+              id="hs-dropdown-default"
+              type="button"
+            >
               <svg
                 width="26"
                 height="20"
@@ -89,8 +110,40 @@ const MobileNav = ({ showSidebar, toggleSidebar }) => {
                   fill="black"
                 />
               </svg>
-              English
+              {selectedLanguage === "en" ? "English" : ""}
+              {selectedLanguage === "al" ? "Shqip" : ""}
+              {selectedLanguage === "mk" ? "Македонски" : ""}
             </button>
+            <div
+              defaultValue={selectedLanguage}
+              onClick={chooseLanguage}
+              class={`cursor-pointer hs-dropdown-menu transition-[opacity,margin] duration ${
+                handleDropdown ? "handleDrop:opacity-100" : "opacity-0 hidden"
+              } w-36 bg-white shadow-lg rounded-b-xl p-2 mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full`}
+              aria-labelledby="hs-dropdown-default"
+            >
+              <option
+                value="en"
+                class="font-normal text-normal flex justify-center items-center gap-x-3.5 py-2 px-3 rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+                href="#"
+              >
+                English
+              </option>
+              <option
+                value="al"
+                class="font-normal text-normal flex justify-center items-center gap-x-3.5 py-2 px-3 rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+                href="#"
+              >
+                Albanian
+              </option>
+              <option
+                value="mk"
+                class="font-normal text-normal flex justify-center items-center gap-x-3.5 py-2 px-3 rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+                href="#"
+              >
+                Macedonian
+              </option>
+            </div>
           </div>
         </div>
       </div>

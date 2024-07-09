@@ -2,19 +2,28 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo/logo.svg";
 import { useState } from "react";
 import i18n from "./i18n";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
+  const { t } = useTranslation();
   function handleNavigation(path) {
     window.location.replace("/" + path);
     // window.location.assign(path);
   }
   const [handleDropdown, setHandleDropdown] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("i18n.language");
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
   const chooseLanguage = (e) => {
+    setHandleDropdown(false);
     e.preventDefault();
     i18n.changeLanguage(e.target.value);
     setSelectedLanguage(e.target.value);
+  };
+
+  const resetDefault = () => {
+    setHandleDropdown(false);
+    setSelectedLanguage("en");
+    i18n.changeLanguage("en");
   };
 
   return (
@@ -36,27 +45,27 @@ function Navbar() {
         <div className="flex basis-8/12 max-lg:invisible justify-center gap-8 items-center font-normal">
           <h2 className="transition ease-in-out duration-300 hover:scale-110">
             <button onClick={() => handleNavigation("#AboutScootspace")}>
-              About Us
+              {t("Navbar.About")}
             </button>
           </h2>
           <h2 className="transition ease-in-out duration-300 hover:scale-110">
             <button onClick={() => handleNavigation("#HowToPark")}>
-              How to park
+              {t("Navbar.HowToPark")}{" "}
             </button>
           </h2>
           <h2 className="transition ease-in-out duration-300 hover:scale-110">
             <button onClick={() => handleNavigation("#HowToUseTheApp")}>
-              How to use the app
+              {t("Navbar.HowToUseTheApp")}
             </button>
           </h2>
           <h2 className="transition ease-in-out duration-300 hover:scale-110">
             <button onClick={() => handleNavigation("#PricingPlan")}>
-              Pricing
+              {t("Navbar.PricingPlan")}
             </button>
           </h2>
           <h2 className="transition ease-in-out duration-300 hover:scale-110">
             <button onClick={() => handleNavigation("#Locations")}>
-              Locations
+              {t("Navbar.Location")}
             </button>
           </h2>
         </div>
@@ -84,7 +93,14 @@ function Navbar() {
                 fill="black"
               />
             </svg>
-            Language
+
+            {selectedLanguage === "en"
+              ? "English"
+              : selectedLanguage === "al"
+              ? "Shqip"
+              : selectedLanguage === "mk"
+              ? "Македонски"
+              : resetDefault()}
           </button>
           {/* <button className="transition ease-in-out duration-150 hover:scale-110 text-white h-10 w-36 bg-primary rounded-[20px] max-lg:invisible ">
             The App
@@ -92,32 +108,32 @@ function Navbar() {
           <div
             defaultValue={selectedLanguage}
             onClick={chooseLanguage}
-            class={`fixed right-4 top-[70px] hs-dropdown-menu transition-[opacity,margin] duration ${
+            class={`cursor-pointer fixed right-4 top-[70px] hs-dropdown-menu transition-[opacity,margin] duration ${
               handleDropdown ? "handleDrop:opacity-100" : "opacity-0 hidden"
             } w-36 bg-white shadow-lg rounded-b-xl p-2 mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full`}
             aria-labelledby="hs-dropdown-default"
           >
-            <a
+            <option
               value="en"
               class="font-normal text-normal flex justify-center items-center gap-x-3.5 py-2 px-3 rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
               href="#"
             >
               English
-            </a>
-            <a
+            </option>
+            <option
               value="al"
               class="font-normal text-normal flex justify-center items-center gap-x-3.5 py-2 px-3 rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
               href="#"
             >
               Albanian
-            </a>
-            <a
+            </option>
+            <option
               value="mk"
               class="font-normal text-normal flex justify-center items-center gap-x-3.5 py-2 px-3 rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
               href="#"
             >
               Macedonian
-            </a>
+            </option>
           </div>
         </div>
       </div>
